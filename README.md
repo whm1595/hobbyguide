@@ -52,11 +52,11 @@ The site is a static bundle — it works on any static host.
 
 ## Affiliate links
 
-All affiliate links in the guides use a placeholder tag (`YOUR_AFFILIATE_TAG`) on Amazon search URLs. Before going live:
+All affiliate links in the guides use the Amazon Associates tag `hobbyguide0d-20` on Amazon search URLs. To rotate the tag, search-and-replace across `hobbies/*.html`.
 
-1. Sign up for the Amazon Associates program (and any other affiliate programs you want to use).
-2. Replace `YOUR_AFFILIATE_TAG` throughout `hobbies/*.html` with your real associate tag.
-3. Consider switching generic `/s?k=...` search links to specific-product links for higher conversion.
-4. Keep the `rel="sponsored nofollow noopener"` attributes — they're required by both the FTC and Amazon's Operating Agreement.
+Ongoing maintenance ideas:
+
+1. Switch generic `/s?k=...` search links to specific-product links for higher conversion.
+2. Keep the `rel="sponsored nofollow noopener"` attributes — they're required by both the FTC and Amazon's Operating Agreement.
 
 The footer and `about.html` contain the required FTC affiliate disclosure; don't remove them.
