@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Automation QuickStart — HobbyGuide.io</title>
+  <meta name="description" content="A friendly QuickStart guide to home automation: pick one problem, automate it this weekend, and avoid the ecosystem-lock-in traps." />
+  <link rel="canonical" href="https://hobbyguide.io/hobbies/home-automation.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">◎</span><span class="brand-name">HobbyGuide<span class="brand-tld">.io</span></span></a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="../index.html#hobbies">Hobbies</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="guide">
+    <div class="container">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / <a href="../index.html#hobbies">Hobbies</a> / Home Automation</p>
+      <h1>Home Automation QuickStart</h1>
+      <p class="tagline">Pick one annoying thing in your house. Automate <em>just</em> that. You'll learn more from one working automation than from a garage full of unconfigured smart plugs.</p>
+      <div class="meta">
+        <span>⏱️ 1 evening to start</span>
+        <span>💸 $40–$100 to begin</span>
+        <span>🏠 Expandable forever</span>
+      </div>
+
+      <h2>Start with one problem, not one platform</h2>
+      <p>Every beginner guide wants you to pick an "ecosystem" first. Skip that. Instead, pick <strong>one specific annoyance</strong> in your house — the porch light you always forget to turn off, the lamp across the room you have to get up to switch, the thermostat you can't reach from bed. Solve <em>that</em>. You'll learn more from one automation you actually use than from a half-built smart home.</p>
+
+      <h2>Matter changed everything (seriously)</h2>
+      <p>The biggest shift in home automation in the last decade is <strong>Matter</strong> — an industry standard that lets devices from different brands work across Apple, Google, Amazon, and Samsung at the same time. In 2024 you had to pick an ecosystem and stay in it. Today, buying a Matter-certified device means it'll work no matter which voice assistant you use — or if you switch later. When shopping, <em>look for the Matter logo on the box</em>.</p>
+
+      <h2>Pick your controller (you may already own it)</h2>
+      <p>You need something to act as the "brain." Good news: you almost certainly already have one.</p>
+      <ul>
+        <li><strong>iPhone household?</strong> A HomePod mini or Apple TV 4K acts as your Matter/Thread hub. Setup is via the Apple Home app.</li>
+        <li><strong>Android / everything-else household?</strong> A Google Nest Hub or recent Amazon Echo works. Google Home or the Alexa app handles setup.</li>
+        <li><strong>Power user eventually?</strong> <a href="https://www.home-assistant.io/" rel="noopener" target="_blank">Home Assistant</a> on a Raspberry Pi or Home Assistant Green (~$100) gives you total control, local-only operation, and every integration under the sun. You can always migrate to it later.</li>
+      </ul>
+
+      <h2>The minimum you need</h2>
+      <p class="affiliate-note">Heads up — some links below are affiliate links. We earn a small commission if you buy, at no extra cost to you.</p>
+      <ul class="gear-list">
+        <li class="gear-item">
+          <div class="gear-body">
+            <h4>A Matter-compatible smart plug</h4>
+            <p>The cheapest, lowest-stakes way to start. Plug a lamp into it and you've got voice control, schedules, and phone control. TP-Link Kasa and Meross both sell reliable Matter plugs around $15 each.</p>
+            <span class="price">~$10–20</span>
+          </div>
+          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+plug&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+        </li>
+        <li class="gear-item">
+          <div class="gear-body">
+            <h4>A couple of smart bulbs OR a smart switch</h4>
+            <p>Smart bulbs are easier (screw in, done) but cost more and stop working if someone flips the dumb wall switch off. Smart switches (TP-Link Kasa, Lutron Caseta) are the "grown-up" choice — they replace the wall switch itself, so every family member's muscle memory still works. Check for a neutral wire before buying; older homes often lack one.</p>
+            <span class="price">~$15–30 each</span>
+          </div>
+          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+switch&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+        </li>
+        <li class="gear-item">
+          <div class="gear-body">
+            <h4>A motion sensor or contact sensor</h4>
+            <p>This is where automation gets <em>magic</em> — "when motion detected in hallway after sunset, turn on hallway light at 20%." Aqara sensors are tiny, cheap, and battery-lasts-years reliable. Most require an Aqara hub (or Home Assistant with Zigbee).</p>
+            <span class="price">~$15–25</span>
+          </div>
+          <a class="btn" href="https://www.amazon.com/s?k=aqara+motion+sensor&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+        </li>
+        <li class="gear-item">
+          <div class="gear-body">
+            <h4>Optional: a smart speaker or display</h4>
+            <p>If you don't already own one, a HomePod mini, Nest Hub, or Echo Dot gives you voice control and doubles as your Matter hub. Not strictly required if you're fine using your phone.</p>
+            <span class="price">~$50–100</span>
+          </div>
+        </li>
+      </ul>
+
+      <h2>Your first automation</h2>
+      <ol class="steps">
+        <li><strong>Plug the smart plug in and set up a lamp.</strong> Pair it via your phone's Apple Home / Google Home / Alexa app. Name it something obvious like "living room lamp" — not "Frank."</li>
+        <li><strong>Get it working with voice first.</strong> "Hey [assistant], turn off the living room lamp." Confirm the basics work before going further.</li>
+        <li><strong>Add a schedule.</strong> "Turn on at sunset, turn off at 11 PM." You've just built your first real automation. Notice how it's more useful than voice control.</li>
+        <li><strong>Add a trigger.</strong> If you have a motion sensor: "turn on when motion, turn off after 5 minutes of no motion." If you don't: "turn on when I arrive home."</li>
+        <li><strong>Live with it for a week.</strong> Note every annoyance — lights on when you don't want them, wrong brightness, timing off. <em>This is the actual hobby.</em> The tweaking is the fun part.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>The spouse test.</strong> The only real measure of good home automation: does it still work if you're not there to fix it? If your partner or roommate can't use the lights because the hub is down, you've built a bad automation. Always keep the dumb fallback working — smart switches over smart bulbs, physical buttons wherever you can.
+      </div>
+
+      <h2>Traps to avoid</h2>
+      <ul>
+        <li><strong>Cloud-only devices.</strong> If the company dies, your device dies. Prefer devices that work locally (Matter, Zigbee, Z-Wave).</li>
+        <li><strong>Buying 20 things on day one.</strong> Every device has a learning curve. Two or three at a time is plenty.</li>
+        <li><strong>Automating what doesn't need automating.</strong> A $3 light switch you use twice a day doesn't need to be $25 and connected to the internet. Focus on things that are <em>actually</em> inconvenient.</li>
+        <li><strong>Ignoring security.</strong> Put smart-home devices on a separate Wi-Fi network (most modern routers support a "guest" or "IoT" SSID). Many cheap devices have terrible security.</li>
+      </ul>
+
+      <h2>Where to go next</h2>
+      <div class="next-steps">
+        <ul>
+          <li>Once you have 5+ devices, try <a href="https://www.home-assistant.io/" rel="noopener" target="_blank">Home Assistant</a> — it's the power-user platform, runs locally, and integrates with basically everything. Steep learning curve but unmatched capability.</li>
+          <li><a href="https://www.reddit.com/r/homeautomation/" rel="noopener" target="_blank">r/homeautomation</a> for general help, <a href="https://www.reddit.com/r/homeassistant/" rel="noopener" target="_blank">r/homeassistant</a> for the Home Assistant rabbit hole.</li>
+          <li>Paul Hibbert and The Hook Up on YouTube both have excellent, opinionated beginner-to-intermediate content.</li>
+          <li>A sensor you don't expect: a <strong>leak sensor</strong> under the dishwasher or water heater will eventually save you from a flood. Best $20 in automation.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> HobbyGuide.io</p>
+      <p class="disclosure">As an Amazon Associate and affiliate partner, we earn from qualifying purchases.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
