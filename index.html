@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HobbyGuide.io — QuickStart guides for new hobbies</title>
+  <meta name="description" content="Friendly QuickStart guides for picking up a new hobby. Get the essentials, skip the overwhelm, and start doing in under an hour." />
+  <link rel="canonical" href="https://hobbyguide.io/" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:title" content="HobbyGuide.io — QuickStart guides for new hobbies" />
+  <meta property="og:description" content="Friendly QuickStart guides to help you start a new hobby today." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hobbyguide.io/" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">◎</span>
+        <span class="brand-name">HobbyGuide<span class="brand-tld">.io</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#hobbies">Hobbies</a>
+        <a href="/about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Start a new hobby today.</h1>
+        <p class="lede">
+          Short, friendly QuickStart guides that tell you exactly what you need,
+          what to skip, and how to take your first real action — usually in under an hour.
+        </p>
+        <form class="search" role="search" onsubmit="return filterHobbies(event)">
+          <label for="q" class="visually-hidden">Search hobbies</label>
+          <input id="q" type="search" placeholder="Search hobbies — try &quot;photography&quot;" autocomplete="off" />
+        </form>
+      </div>
+    </section>
+
+    <section id="hobbies" class="hobbies">
+      <div class="container">
+        <h2>Browse hobbies</h2>
+        <ul class="hobby-grid" id="hobby-grid">
+          <li>
+            <a class="hobby-card" href="/hobbies/photography.html" data-tags="photography camera art outdoor creative">
+              <span class="hobby-emoji" aria-hidden="true">📷</span>
+              <h3>Photography</h3>
+              <p>Learn to see light. Start shooting intentionally on gear you already own.</p>
+            </a>
+          </li>
+          <li>
+            <a class="hobby-card" href="/hobbies/gardening.html" data-tags="gardening plants outdoor green-thumb">
+              <span class="hobby-emoji" aria-hidden="true">🌱</span>
+              <h3>Gardening</h3>
+              <p>Grow something edible or beautiful in a weekend — no yard required.</p>
+            </a>
+          </li>
+          <li>
+            <a class="hobby-card" href="/hobbies/woodworking.html" data-tags="woodworking maker craft diy tools">
+              <span class="hobby-emoji" aria-hidden="true">🪚</span>
+              <h3>Woodworking</h3>
+              <p>Build a small, useful object with hand tools. Sawdust optional but encouraged.</p>
+            </a>
+          </li>
+          <li>
+            <a class="hobby-card" href="/hobbies/birdwatching.html" data-tags="birding birdwatching outdoor nature">
+              <span class="hobby-emoji" aria-hidden="true">🐦</span>
+              <h3>Bird Watching</h3>
+              <p>Identify ten local birds this week and never look at the sky the same way.</p>
+            </a>
+          </li>
+          <li>
+            <a class="hobby-card" href="/hobbies/homebrewing.html" data-tags="beer homebrew brewing food">
+              <span class="hobby-emoji" aria-hidden="true">🍺</span>
+              <h3>Home Brewing</h3>
+              <p>Brew a drinkable beer at home with a 1-gallon starter kit.</p>
+            </a>
+          </li>
+          <li>
+            <a class="hobby-card" href="/hobbies/baking-sourdough.html" data-tags="baking sourdough bread food cooking">
+              <span class="hobby-emoji" aria-hidden="true">🍞</span>
+              <h3>Sourdough Baking</h3>
+              <p>From starter to first loaf in under two weeks.</p>
+            </a>
+          </li>
+        </ul>
+        <p id="no-results" class="no-results" hidden>No hobbies match that search — yet.</p>
+      </div>
+    </section>
+
+    <section class="promise">
+      <div class="container">
+        <h2>What you get in every QuickStart</h2>
+        <ul class="promise-list">
+          <li><strong>The minimum you actually need.</strong> No 40-item shopping lists.</li>
+          <li><strong>A first action you can do this weekend.</strong> Real momentum, not theory.</li>
+          <li><strong>Honest gear picks.</strong> Some links are affiliate links — we only recommend things we'd give a friend.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> HobbyGuide.io</p>
+      <p class="disclosure">
+        As an Amazon Associate and affiliate partner, we earn from qualifying purchases.
+        This doesn't change what we recommend.
+      </p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

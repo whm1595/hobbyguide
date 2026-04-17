@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://hobbyguide.io/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://hobbyguide.io/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/photography.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/gardening.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/woodworking.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/birdwatching.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/homebrewing.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hobbyguide.io/hobbies/baking-sourdough.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>
