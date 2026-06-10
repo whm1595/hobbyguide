@@ -116,6 +116,15 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
 }
+.hobby-category { margin-bottom: 2.25rem; }
+.hobby-category > h3 {
+  font-size: 1rem; font-weight: 600; color: var(--ink-soft);
+  letter-spacing: 0.04em; margin: 0 0 0.85rem;
+}
+.cat-food { --chip: #fbe9d4; }
+.cat-outdoors { --chip: #dcefdf; }
+.cat-crafts { --chip: #f4e7ee; }
+.cat-tech { --chip: #dde9f6; }
 .hobby-card {
   display: block; padding: 1.25rem;
   background: var(--bg-alt); border: 1px solid var(--border);
@@ -128,9 +137,18 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
   border-color: var(--accent);
   box-shadow: var(--shadow);
 }
-.hobby-emoji { font-size: 1.75rem; display: block; margin-bottom: 0.5rem; }
-.hobby-card h3 { margin: 0 0 0.25rem; font-size: 1.15rem; }
+.hobby-emoji {
+  font-size: 1.5rem; display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 2.75rem; height: 2.75rem; border-radius: 10px;
+  background: var(--chip, var(--bg)); margin-bottom: 0.6rem;
+}
+.hobby-card h4 { margin: 0 0 0.25rem; font-size: 1.15rem; }
 .hobby-card p { margin: 0; color: var(--ink-soft); font-size: 0.95rem; }
+.card-meta {
+  display: block; margin-top: 0.6rem;
+  font-size: 0.85rem; color: var(--ink-soft);
+}
 .no-results {
   text-align: center; color: var(--ink-soft);
   padding: 1.5rem; font-style: italic;
@@ -158,12 +176,16 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
   color: var(--ink-soft); font-size: 0.9rem;
 }
 .footer-inner p { margin: 0 0 0.5rem; }
+.footer-nav { display: flex; gap: 1.25rem; margin-bottom: 0.75rem; }
+.footer-nav a { color: var(--ink-soft); text-decoration: none; font-weight: 500; }
+.footer-nav a:hover { color: var(--accent); }
 .disclosure { max-width: 680px; }
 
 /* Guide page layout */
 .guide {
   padding: 2rem 0 4rem;
 }
+.guide .container { max-width: 780px; }
 .guide .breadcrumb {
   font-size: 0.9rem; color: var(--ink-soft);
   margin-bottom: 1rem;
@@ -195,6 +217,13 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
   padding: 0.25rem 0.6rem; border: 1px solid var(--border);
   border-radius: 999px; background: var(--bg-alt);
 }
+
+.toc {
+  font-size: 0.9rem; color: var(--ink-soft);
+  margin: -1rem 0 2rem;
+}
+.toc a { color: var(--accent-dark); text-decoration: none; font-weight: 500; }
+.toc a:hover { text-decoration: underline; }
 
 .gear-list {
   list-style: none; padding: 0; margin: 1rem 0;
@@ -271,7 +300,15 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
 }
 .faq summary {
   font-weight: 600; cursor: pointer;
+  list-style: none; position: relative; padding-right: 1.75rem;
 }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: "+"; position: absolute; right: 0.1rem; top: 50%;
+  transform: translateY(-50%);
+  color: var(--accent); font-weight: 700; font-size: 1.2rem;
+}
+.faq details[open] summary::after { content: "–"; }
 .faq summary:hover { color: var(--accent-dark); }
 .faq details p {
   margin: 0.6rem 0 0; color: var(--ink-soft);
@@ -288,4 +325,23 @@ a:focus-visible, .btn:focus-visible, .hobby-card:focus-visible {
   .gear-item { flex-direction: column; align-items: stretch; }
   .gear-item .btn { align-self: flex-start; }
   .site-nav a { margin-left: 0.75rem; font-size: 0.95rem; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15181e;
+    --bg-alt: #1e232c;
+    --ink: #e8e6e1;
+    --ink-soft: #a7aebb;
+    --accent: #3f9d75;
+    --accent-dark: #6cc49c;
+    --border: #2d333e;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  }
+  .btn { border-color: #2f7d5b; }
+  .btn:hover { background: #348a66; }
+  .cat-food { --chip: #36291a; }
+  .cat-outdoors { --chip: #20301f; }
+  .cat-crafts { --chip: #322433; }
+  .cat-tech { --chip: #1f2a3a; }
 }

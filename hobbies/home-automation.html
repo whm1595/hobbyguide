@@ -39,6 +39,8 @@
         <span>🗓️ Updated June 2026</span>
       </div>
 
+      <nav class="toc" aria-label="On this page">Jump to: <a href="#gear">Gear</a> · <a href="#first-steps">First steps</a> · <a href="#faq">FAQ</a> · <a href="#next">What&#39;s next</a></nav>
+
       <h2>Start with one problem, not one platform</h2>
       <p>Every beginner guide wants you to pick an "ecosystem" first. Skip that. Instead, pick <strong>one specific annoyance</strong> in your house — the porch light you always forget to turn off, the lamp across the room you have to get up to switch, the thermostat you can't reach from bed. Solve <em>that</em>. You'll learn more from one automation you actually use than from a half-built smart home.</p>
 
@@ -53,7 +55,7 @@
         <li><strong>Power user eventually?</strong> <a href="https://www.home-assistant.io/" rel="noopener" target="_blank">Home Assistant</a> on a Raspberry Pi or Home Assistant Green (~$100) gives you total control, local-only operation, and every integration under the sun. You can always migrate to it later.</li>
       </ul>
 
-      <h2>The minimum you need</h2>
+      <h2 id="gear">The minimum you need</h2>
       <p class="affiliate-note">Heads up — some links below are affiliate links. We earn a small commission if you buy, at no extra cost to you.</p>
       <ul class="gear-list">
         <li class="gear-item">
@@ -62,7 +64,7 @@
             <p>The cheapest, lowest-stakes way to start. Plug a lamp into it and you've got voice control, schedules, and phone control. TP-Link Kasa and Meross both sell reliable Matter plugs around $15 each.</p>
             <span class="price">~$10–20</span>
           </div>
-          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+plug&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+plug&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop smart plugs</a>
         </li>
         <li class="gear-item">
           <div class="gear-body">
@@ -70,7 +72,7 @@
             <p>Smart bulbs are easier (screw in, done) but cost more and stop working if someone flips the dumb wall switch off. Smart switches (TP-Link Kasa, Lutron Caseta) are the "grown-up" choice — they replace the wall switch itself, so every family member's muscle memory still works. Check for a neutral wire before buying; older homes often lack one.</p>
             <span class="price">~$15–30 each</span>
           </div>
-          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+switch&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+          <a class="btn" href="https://www.amazon.com/s?k=matter+smart+switch&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop switches</a>
         </li>
         <li class="gear-item">
           <div class="gear-body">
@@ -78,7 +80,7 @@
             <p>This is where automation gets <em>magic</em> — "when motion detected in hallway after sunset, turn on hallway light at 20%." Aqara sensors are tiny, cheap, and battery-lasts-years reliable. Most require an Aqara hub (or Home Assistant with Zigbee).</p>
             <span class="price">~$15–25</span>
           </div>
-          <a class="btn" href="https://www.amazon.com/s?k=aqara+motion+sensor&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop options</a>
+          <a class="btn" href="https://www.amazon.com/s?k=aqara+motion+sensor&tag=hobbyguide0d-20" rel="sponsored nofollow noopener" target="_blank">Shop sensors</a>
         </li>
         <li class="gear-item">
           <div class="gear-body">
@@ -89,7 +91,7 @@
         </li>
       </ul>
 
-      <h2>Your first automation</h2>
+      <h2 id="first-steps">Your first automation</h2>
       <ol class="steps">
         <li><strong>Plug the smart plug in and set up a lamp.</strong> Pair it via your phone's Apple Home / Google Home / Alexa app. Name it something obvious like "living room lamp" — not "Frank."</li>
         <li><strong>Get it working with voice first.</strong> "Hey [assistant], turn off the living room lamp." Confirm the basics work before going further.</li>
@@ -110,7 +112,7 @@
         <li><strong>Ignoring security.</strong> Put smart-home devices on a separate Wi-Fi network (most modern routers support a "guest" or "IoT" SSID). Many cheap devices have terrible security.</li>
       </ul>
 
-      <h2>Where to go next</h2>
+      <h2 id="next">Where to go next</h2>
       <div class="next-steps">
         <ul>
           <li>Once you have 5+ devices, try <a href="https://www.home-assistant.io/" rel="noopener" target="_blank">Home Assistant</a> — it's the power-user platform, runs locally, and integrates with basically everything. Steep learning curve but unmatched capability.</li>
@@ -120,7 +122,7 @@
         </ul>
       </div>
 
-      <h2>Beginner FAQ</h2>
+      <h2 id="faq">Beginner FAQ</h2>
       <div class="faq">
         <details>
           <summary>Will my smart home still work if the internet goes down?</summary>
@@ -142,6 +144,11 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="../index.html#hobbies">Hobbies</a>
+        <a href="../about.html">About</a>
+        <a href="mailto:hi@hobbyguide.io">Contact</a>
+      </nav>
       <p>&copy; <span id="year"></span> HobbyGuide.io</p>
       <p class="disclosure">As an Amazon Associate and affiliate partner, we earn from qualifying purchases.</p>
     </div>
